@@ -5,8 +5,6 @@ var path = require('path');
 var mime = require('mime');
 var app = express();
 var options = {
-   key  : fs.readFileSync('server.key'),
-   cert : fs.readFileSync('server.crt')
 };
 
 app.get('/', function (req, res) {
