@@ -1,27 +1,18 @@
 var fs = require('fs');
-var https = require('https');
-var express = require('express');
 var path = require('path');
-var mime = require('mime');
+var http = require('http');
+var express = require("express");
 var app = express();
-var options = {
-};
+
+app.set('port', process.env.PORT || 3000);
+// app.use(app.logger());
 
 app.get('/', function (req, res) {
-     // var file = __dirname + '/public/index.html';
+   // res.send('Hello World!');
   var file = __dirname + '/public/apple-app-site-association';
   res.sendFile(file);
 });
 
-app.get('/apple-app-site-association', function(req, res){
-
-  // var file = __dirname + '/public/index.html';
-  var file = __dirname + '/public/apple-app-site-association';
-  res.sendFile(file);
+app.listen(process.env.PORT, function () {
+  console.log('***** exp listening on port: ' + process.env.PORT);
 });
-
-https.createServer(options, app).listen(3000, function () {
-   console.log('Started!');
-});
-
-// https://127.0.0.1:3000/apple-app-site-association
