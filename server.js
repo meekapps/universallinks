@@ -8,9 +8,7 @@ app.set('port', process.env.PORT || 3000);
 // app.use(app.logger());
 
 app.get('/', function (req, res) {
-   // res.send('Hello World!');
-  var file = __dirname + '/public/apple-app-site-association';
-  res.sendFile(file);
+  res.send('Hello World!');
 });
 
 app.get('/apple-app-site-association', function (req, res) {
