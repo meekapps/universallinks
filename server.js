@@ -13,6 +13,12 @@ app.get('/', function (req, res) {
   res.sendFile(file);
 });
 
+app.get('/apple-app-site-association', function (req, res) {
+   // res.send('Hello World!');
+  var file = __dirname + '/public/apple-app-site-association';
+  res.sendFile(file);
+});
+
 app.listen(process.env.PORT, function () {
   console.log('***** exp listening on port: ' + process.env.PORT);
 });
