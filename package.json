@@ -1,0 +1,25 @@
+{
+  "name": "universallinks",
+  "version": "1.0.0",
+  "description": "Testing iOS universal link handling on heroku.",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.14.0",
+    "mime": "^1.3.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meekapps/universallinks.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/meekapps/universallinks/issues"
+  },
+  "homepage": "https://github.com/meekapps/universallinks#readme"
+}
