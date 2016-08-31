@@ -26,6 +26,7 @@
 		41BF314F1D771C1600F20F68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		41BF31521D771C1600F20F68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		41BF31541D771C1600F20F68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41BF315A1D77212200F20F68 /* universallinks.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = universallinks.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +59,7 @@
 		41BF31421D771C1600F20F68 /* universallinks */ = {
 			isa = PBXGroup;
 			children = (
+				41BF315A1D77212200F20F68 /* universallinks.entitlements */,
 				41BF31461D771C1600F20F68 /* AppDelegate.h */,
 				41BF31471D771C1600F20F68 /* AppDelegate.m */,
 				41BF31491D771C1600F20F68 /* ViewController.h */,
@@ -110,6 +112,12 @@
 				TargetAttributes = {
 					41BF313F1D771C1600F20F68 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = TFCWAQ62U3;
+						SystemCapabilities = {
+							com.apple.SafariKeychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -263,6 +271,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = universallinks/universallinks.entitlements;
 				INFOPLIST_FILE = universallinks/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.meekapps.universallinks;
@@ -274,6 +283,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = universallinks/universallinks.entitlements;
 				INFOPLIST_FILE = universallinks/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.meekapps.universallinks;
